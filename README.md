@@ -1,2 +1,2 @@
 # mf222.github.io
-Personal page
+My personal page. Contents básic information, CV and other random information. 
