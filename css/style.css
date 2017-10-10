@@ -1,0 +1,93 @@
+body{
+    background-color: #3d3d3d;
+    font: 12px 'Lucida Grande', Arial, sans-serif;
+    max-width: 100%;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    opacity: 0.7;
+}
+
+header p{
+    color: white;
+    opacity: 0.3;
+    margin-top: -15px;
+}
+
+header{
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+
+header h1{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 35px;
+    color: #fafafc;
+    margin-top: -3px;
+}
+
+.pic-sty{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    opacity: 0.9;
+}
+
+.pic-sty:hover{
+    opacity: 1;
+}
+
+footer{
+    text-align: center;
+    color:white;
+    background-color: #393939;
+    border-top: 2px solid #2f2f2f;
+    height: 20px;
+    width: 110%;
+    bottom: 0px;
+    position: fixed;
+    padding: 5px;
+    font-size: 10px;
+    margin-left: -40px;
+}
+
+section{
+    background-color: #fafafc;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid #a3a3a3;
+    text-align: center;
+}
+
+section h2{
+    color: #2f2f2f;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.container{
+    background-color: #e9eaee;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.info-footer{
+    width: 70px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    footer {
+      margin-left: -70px;
+    }
+  }
