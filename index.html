@@ -10,8 +10,10 @@
         <meta name="description" content="My personal page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon"  type="image/png" href="images/favicon-32x32.png">
+        <link rel="stylesheet" type="text/css" href="vendor/css/carousel.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pathway+Gothic+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pathway+Gothic+One|Great+Vibes|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="vendor/css/tooltipster.css" />
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -24,14 +26,36 @@
             <p>Software Engineer - Researcher</p>
         </header>
 
-        <div class="container">
-            <section>
+        <div class="container-sty slideshow-container">
+            <section class="mySlides fade">
                 <h2>About me</h2>
                 <p>At the moment a undegree student, aiming to be a software engineer and a researcher. My academic interests are software development, UX, information retrieval and social network analysis. 
                     My hobbies includes image edition and drawing, before studying engineering I wanted to be a designer. Now is kind of a hobby.
                 </p>
-            </section>            
+                <img src="images/separator.png" class="separator-sty" />
+                <div class="icons-space">
+                    <a href="https://www.linkedin.com/in/mf222/"><img src="images/linkedin2.png" class="tooltip icon-sty" title="Go to LinkedIn" /></a>
+                    <a href="https://github.com/mf222"><img src="images/github.svg" class="tooltip icon-sty" title="Go to Github" /></a>
+                    <a href="files/CV-ESP.pdf"><img src="images/pdf.png" class="tooltip icon-sty" title="Open CV - Resumé" /></a>
+                </div>
+            </section>
+            <section class="mySlides fade">
+                <h2>A simple inspirational quote</h2>
+                <h3>Wubba Lubba dub-dub ( I am in great pain, please help me).</h3>
+                <h4>- Pablo Neruda</h4>
+                <img src="images/separator.png" class="separator-sty" />
+            </section>
+            <section class="mySlides fade">
+                    <a class="twitter-timeline" data-width="500" data-height="300" data-theme="dark" href="https://twitter.com/mferser?ref_src=twsrc%5Etfw">Tweets by mferser</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </div>
+        
 
         <footer>
             <div class="info-footer">
@@ -39,5 +63,51 @@
             </div></footer>
 
 
+            
+            
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>        
+        <script type="text/javascript" src="vendor/js/tooltipster.js"></script>
+        <script src="vendor/js/jquery.jcarousel.js"></script>      
+        <script>
+            $(document).ready(function() {
+                $('.tooltip').tooltipster({
+                    animation: 'fade',
+                    delay: 200,
+                    trigger: 'hover',
+
+                    side: 'bottom'
+                });
+            });
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+            }
+
+
+        </script>
     </body>
 </html>
