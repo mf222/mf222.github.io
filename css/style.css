@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.c-content {
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.c-header {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-info {
+    height: 250px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.c-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-links {
+    height: 200px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-info__picture {
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+    margin-top: 25px;
+    float: left;
+    background-image: url('../images/back-img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+}
+
+.c-info__name {
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: -40px;
+}
+
+.c-info__description {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    text-align: justify;
+    float: left;
+    width: 300px;
+    margin-top: 140px;
+    margin-left: -110px;
+}
+
+.c-info__description a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.c-info__description a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FE4A49;
+}
+
+.c-links__cv, .c-links__mail,
+.c-links__twitter, .c-links__linkedin {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px 75px 75px 75px;
+    -moz-border-radius: 75px 75px 75px 75px;
+    -webkit-border-radius: 75px 75px 75px 75px;
+    margin: 10px;
+}
+
+.c-links__cv, .c-links__mail,
+.c-links__twitter, .c-links__linkedin, .c-info__name {
+    background-color: #FFED66; /* #B2FFA9 75DBCD */
+}
+
+.c-links__cv {
+    background-image: url('../images/pdf.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.c-links__linkedin {
+    background-image: url('../images/linkedin.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.c-links__mail {
+    background-image: url('../images/mail.svg');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+}
+
+.c-links__twitter {
+    background-image: url('../images/twitter.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
