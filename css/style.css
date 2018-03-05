@@ -20,7 +20,6 @@ html, body {
 
 .c-info {
     height: 250px;
-    width: 550px;
     margin: 0 auto;
 }
 
@@ -32,7 +31,6 @@ html, body {
 }
 
 .c-links {
-    height: 200px;
     width: 800px;
     display: flex;
     justify-content: center;
@@ -83,7 +81,7 @@ html, body {
 
 .c-info__description a:hover {
     text-decoration: underline;
-    text-decoration-color: #FE4A49;
+    text-decoration-color: #FFED66;
 }
 
 .c-links__cv, .c-links__mail,
@@ -94,11 +92,19 @@ html, body {
     -moz-border-radius: 75px 75px 75px 75px;
     -webkit-border-radius: 75px 75px 75px 75px;
     margin: 10px;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    cursor: pointer;
 }
 
 .c-links__cv, .c-links__mail,
 .c-links__twitter, .c-links__linkedin, .c-info__name {
-    background-color: #FFED66; /* #B2FFA9 75DBCD */
+    background-color: #B2FFA9; /* #B2FFA9 FFED66 #FE4A49*/
+}
+
+.c-links__cv:hover, .c-links__mail:hover,
+.c-links__twitter:hover, .c-links__linkedin:hover {
+    background-color: black;
 }
 
 .c-links__cv {
