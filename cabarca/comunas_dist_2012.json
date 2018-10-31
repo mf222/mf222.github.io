@@ -1,0 +1,326 @@
+{
+    "Alhué": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Buin": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0.98,
+        "topic_3": 0
+    },
+    "Calera de Tango": {
+        "topic_0": 0.29,
+        "topic_1": 0,
+        "topic_2": 0.31,
+        "topic_3": 0.39
+    },
+    "Cerrillos": {
+        "topic_0": 0.06,
+        "topic_1": 0.15,
+        "topic_2": 0.62,
+        "topic_3": 0.16
+    },
+    "Cerro Navia": {
+        "topic_0": 0.06,
+        "topic_1": 0.02,
+        "topic_2": 0.71,
+        "topic_3": 0.2
+    },
+    "Colina": {
+        "topic_0": 0.08,
+        "topic_1": 0.08,
+        "topic_2": 0.63,
+        "topic_3": 0.21
+    },
+    "Conchali": {
+        "topic_0": 0.11,
+        "topic_1": 0.13,
+        "topic_2": 0.48,
+        "topic_3": 0.27
+    },
+    "Curacaví": {
+        "topic_0": 0.1,
+        "topic_1": 0.05,
+        "topic_2": 0.44,
+        "topic_3": 0.39
+    },
+    "El Bosque": {
+        "topic_0": 0.04,
+        "topic_1": 0.05,
+        "topic_2": 0.77,
+        "topic_3": 0.13
+    },
+    "El Monte": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Estación Central": {
+        "topic_0": 0.04,
+        "topic_1": 0.1,
+        "topic_2": 0.68,
+        "topic_3": 0.17
+    },
+    "Huechuraba": {
+        "topic_0": 0.03,
+        "topic_1": 0.09,
+        "topic_2": 0.67,
+        "topic_3": 0.2
+    },
+    "Independencia": {
+        "topic_0": 0.07,
+        "topic_1": 0.11,
+        "topic_2": 0.66,
+        "topic_3": 0.15
+    },
+    "Isla de Maipo": {
+        "topic_0": 0.09,
+        "topic_1": 0.24,
+        "topic_2": 0.36,
+        "topic_3": 0.3
+    },
+    "La Cisterna": {
+        "topic_0": 0.04,
+        "topic_1": 0.12,
+        "topic_2": 0.56,
+        "topic_3": 0.27
+    },
+    "La Florida": {
+        "topic_0": 0.07,
+        "topic_1": 0.07,
+        "topic_2": 0.66,
+        "topic_3": 0.19
+    },
+    "La Granja": {
+        "topic_0": 0.07,
+        "topic_1": 0,
+        "topic_2": 0.89,
+        "topic_3": 0.03
+    },
+    "La Pintana": {
+        "topic_0": 0.11,
+        "topic_1": 0.16,
+        "topic_2": 0.6,
+        "topic_3": 0.12
+    },
+    "La Reina": {
+        "topic_0": 0.04,
+        "topic_1": 0.11,
+        "topic_2": 0.68,
+        "topic_3": 0.16
+    },
+    "Lampa": {
+        "topic_0": 0.07,
+        "topic_1": 0.13,
+        "topic_2": 0.64,
+        "topic_3": 0.14
+    },
+    "Las Condes": {
+        "topic_0": 0.07,
+        "topic_1": 0.1,
+        "topic_2": 0.65,
+        "topic_3": 0.17
+    },
+    "Lisbon": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Lo Barnechea": {
+        "topic_0": 0.05,
+        "topic_1": 0.09,
+        "topic_2": 0.68,
+        "topic_3": 0.18
+    },
+    "Lo Espejo": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0.89,
+        "topic_3": 0.1
+    },
+    "Lo Prado": {
+        "topic_0": 0.08,
+        "topic_1": 0.06,
+        "topic_2": 0.63,
+        "topic_3": 0.23
+    },
+    "Macul": {
+        "topic_0": 0.07,
+        "topic_1": 0.06,
+        "topic_2": 0.6,
+        "topic_3": 0.26
+    },
+    "Maipú": {
+        "topic_0": 0.06,
+        "topic_1": 0.11,
+        "topic_2": 0.6,
+        "topic_3": 0.22
+    },
+    "María Pinto": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Melipilla": {
+        "topic_0": 0.06,
+        "topic_1": 0.12,
+        "topic_2": 0.67,
+        "topic_3": 0.14
+    },
+    "Padre Hurtado": {
+        "topic_0": 0.04,
+        "topic_1": 0.01,
+        "topic_2": 0.83,
+        "topic_3": 0.11
+    },
+    "Paine": {
+        "topic_0": 0.01,
+        "topic_1": 0.23,
+        "topic_2": 0.55,
+        "topic_3": 0.2
+    },
+    "Pedro Aguirre Cerda": {
+        "topic_0": 0.09,
+        "topic_1": 0.02,
+        "topic_2": 0.73,
+        "topic_3": 0.16
+    },
+    "Peñaflor": {
+        "topic_0": 0.06,
+        "topic_1": 0.06,
+        "topic_2": 0.55,
+        "topic_3": 0.31
+    },
+    "Peñalolén": {
+        "topic_0": 0.08,
+        "topic_1": 0.12,
+        "topic_2": 0.66,
+        "topic_3": 0.13
+    },
+    "Pirque": {
+        "topic_0": 0.06,
+        "topic_1": 0,
+        "topic_2": 0.93,
+        "topic_3": 0
+    },
+    "Providencia": {
+        "topic_0": 0.05,
+        "topic_1": 0.09,
+        "topic_2": 0.67,
+        "topic_3": 0.18
+    },
+    "Pudahuel": {
+        "topic_0": 0.03,
+        "topic_1": 0.1,
+        "topic_2": 0.63,
+        "topic_3": 0.24
+    },
+    "Puente Alto": {
+        "topic_0": 0.08,
+        "topic_1": 0.08,
+        "topic_2": 0.62,
+        "topic_3": 0.22
+    },
+    "Quilicura": {
+        "topic_0": 0.04,
+        "topic_1": 0.08,
+        "topic_2": 0.68,
+        "topic_3": 0.19
+    },
+    "Quinta Normal": {
+        "topic_0": 0.06,
+        "topic_1": 0.13,
+        "topic_2": 0.65,
+        "topic_3": 0.14
+    },
+    "Recoleta": {
+        "topic_0": 0.05,
+        "topic_1": 0.15,
+        "topic_2": 0.63,
+        "topic_3": 0.16
+    },
+    "Renca": {
+        "topic_0": 0.04,
+        "topic_1": 0.13,
+        "topic_2": 0.76,
+        "topic_3": 0.06
+    },
+    "San Bernardo": {
+        "topic_0": 0.06,
+        "topic_1": 0.15,
+        "topic_2": 0.65,
+        "topic_3": 0.14
+    },
+    "San Joaquín": {
+        "topic_0": 0.08,
+        "topic_1": 0.11,
+        "topic_2": 0.63,
+        "topic_3": 0.18
+    },
+    "San José de Maipo": {
+        "topic_0": 0.2,
+        "topic_1": 0.42,
+        "topic_2": 0.38,
+        "topic_3": 0
+    },
+    "San Miguel": {
+        "topic_0": 0.06,
+        "topic_1": 0.15,
+        "topic_2": 0.57,
+        "topic_3": 0.2
+    },
+    "San Pedro": {
+        "topic_0": 0.02,
+        "topic_1": 0.02,
+        "topic_2": 0.95,
+        "topic_3": 0.02
+    },
+    "San Ramón": {
+        "topic_0": 0.02,
+        "topic_1": 0.13,
+        "topic_2": 0.54,
+        "topic_3": 0.3
+    },
+    "Santiago": {
+        "topic_0": 0.06,
+        "topic_1": 0.09,
+        "topic_2": 0.62,
+        "topic_3": 0.22
+    },
+    "Talagante": {
+        "topic_0": 0.03,
+        "topic_1": 0.08,
+        "topic_2": 0.66,
+        "topic_3": 0.21
+    },
+    "Tiltil": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Villa San Antonio de Comaico": {
+        "topic_0": 0,
+        "topic_1": 0,
+        "topic_2": 0,
+        "topic_3": 0
+    },
+    "Vitacura": {
+        "topic_0": 0.04,
+        "topic_1": 0.13,
+        "topic_2": 0.64,
+        "topic_3": 0.18
+    },
+    "Ñuñoa": {
+        "topic_0": 0.04,
+        "topic_1": 0.08,
+        "topic_2": 0.72,
+        "topic_3": 0.16
+    }
+}

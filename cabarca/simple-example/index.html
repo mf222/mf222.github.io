@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+<body>
+  <div class="content">
+    <div>
+      <svg id="map" class="map"></svg>
+      <div>
+        <label for="allow-filter">Filtrar por año</label>
+        <input type="checkbox" id="allow-filter" name="filter" />
+        <br>
+        <label for="year-filter">Año</label>
+        <input type="range" id="year-filter" name="year"
+               min="2011" max="2016" value="2011" list="steplist" disabled />
+        <datalist id="steplist" style="display: -webkit-box; font-size: 10px; margin-left: 5px;margin-left: 28px;">
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+        </datalist>
+      </div>
+    </div>
+    <div id="grid" class="bars"></div>
+  </div>
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="js/vis.js"></script>
+</body>
