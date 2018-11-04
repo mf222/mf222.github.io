@@ -1,4 +1,6 @@
-/* global d3 */
+/* global d3, document */
+/* eslint-disable no-undef, no-magic-numbers, func-style, prefer-arrow-callback */
+/* eslint max-statements: ["error", 100] */
 
 const CENTER_LAT = -70.5993;
 const CENTER_LNG = -33.4489;
@@ -29,9 +31,9 @@ const path = d3.geo.path()
   .projection(projection);
 
   // Set the barchart scales
-var xScale = d3.scale.ordinal().rangeRoundBands([0, barW], .3);
-var yScale = d3.scale.linear().range([barH, 0]);
-var barColor = d3.scale.ordinal().range(['#9a406e', '#409A99', 'red', 'yellow', 'green']);
+const xScale = d3.scale.ordinal().rangeRoundBands([0, barW], .3);
+const yScale = d3.scale.linear().range([barH, 0]);
+const barColor = d3.scale.ordinal().range(['#9a406e', '#409A99', 'red', 'yellow', 'green']);
 
 // define the barchart axis
 const xAxis = d3.svg.axis()
@@ -66,6 +68,24 @@ const bigText = g.append('text')
   .attr('x', 20)
   .attr('y', 45);
 
+const wordsContentList = [];
+
+d3.json('./../words.json', (error, data) => {
+  const words = document.getElementById('words-content');
+  ['topic_0', 'topic_1', 'topic_2', 'topic_3'].map(function (topicName) {
+    const list = document.createElement('ul');
+    list.classList.add(topicName);
+    data[topicName].words.map(function (element) {
+      const listElement = document.createElement('li');
+      listElement.appendChild(document.createTextNode(element.word));
+      list.appendChild(listElement);
+    });
+    words.appendChild(list);
+    list.style.display = 'none';
+    wordsContentList.push(list);
+  });
+});
+
 d3.json('./../data/conurbacion.geojson', (error, mapData) => {
   const geo = mapData.features;
   color.domain([0, d3.max(geo, nameLength)]);
@@ -97,6 +117,15 @@ d3.json('./../data/conurbacion.geojson', (error, mapData) => {
     const yearSelected = document.getElementById('year-filter').value;
     createBarchartOverData(`./../comunas_dist_${yearSelected}.json`, geo);
   });
+
+  // const chartdocument = document.getElementsByClassName('bar');
+  // console.log(chartdocument);
+  // for (var i = 0; i < chartdocument.length; i++) {
+  //   console.log(chartdocument[i]);
+  //   chartdocument[i].addEventListener('mouseenter', function(ev){
+  //     console.log(ev);
+  //   });
+  // }
 });
 
 function clearGrid() {
@@ -107,20 +136,22 @@ function clearGrid() {
 }
 
 function splitTopic(topics) {
-  splitted = new Array()
-  topics.forEach(function(item) {
-    splitted.push([item[0].split('_')[1], item[1]])
-  })
-  return splitted
+  splitted = [];
+  topics.forEach(function (item) {
+    splitted.push([item[0].split('_')[1], item[1]]);
+  });
+
+  return splitted;
 }
+
 // Create barchart
 function createBarchart(wrapper, data) {
   const provinceName = data[0];
-  const topics = splitTopic(Object.entries(data[1]))
+  const topics = splitTopic(Object.entries(data[1]));
   // scale the range of the data
-  xScale.domain(topics.map(function(d) { return d[0]; }));
-  yScale.domain([0, d3.max(topics, function(d) { return d[1] }) * 1.1]);
-  barColor.domain(topics.map(function(d) { return d[0]; }));
+  xScale.domain(topics.map(function (d) { return d[0]; }));
+  yScale.domain([0, d3.max(topics, function (d) { return d[1]; }) * 1.1]);
+  barColor.domain(topics.map(function (d) { return d[0]; }));
 
   const svgContent = wrapper.append('svg')
     .attr({ width: barWidth + barMargin.left + barMargin.right,
@@ -139,14 +170,24 @@ function createBarchart(wrapper, data) {
     .attr('width', xScale.rangeBand())
     .attr('y', function(d) { return yScale(d[1]); })
     .attr('height', function(d) { return barH - yScale(d[1]); })
-    .style('fill', 'blue');
+    .style('fill', 'blue')
+    .on('mouseover', function() {
+      getBarWords(this.x.baseVal.value);
+      d3.select(this)
+        .style('stroke', 'red');
+    })
+    .on('mouseout', function() {
+      cleanBarWords(this.x.baseVal.value);
+      d3.select(this)
+        .style('stroke', 'none');
+    });
 
   svgContent.append('g')
     .attr('class', 'x axis')
     .attr('transform', `translate(0,${barH})`)
     .call(xAxis)
     .selectAll('text')
-    .style('text-anchor', 'middle')
+    .style('text-anchor', 'middle');
 
   svgContent.append('g')
     .attr('class', 'y axis')
@@ -160,6 +201,30 @@ function createBarchart(wrapper, data) {
     .text(provinceName);
 }
 
+function getBarWords(number) {
+  if (number === 8) {
+    wordsContentList[0].style.display = 'flex';
+  } else if (number === 28) {
+    wordsContentList[1].style.display = 'flex';
+  } else if (number === 48) {
+    wordsContentList[2].style.display = 'flex';
+  } else if (number === 68) {
+    wordsContentList[3].style.display = 'flex';
+  }
+}
+
+function cleanBarWords(number) {
+  if (number === 8) {
+    wordsContentList[0].style.display = 'none';
+  } else if (number === 28) {
+    wordsContentList[1].style.display = 'none';
+  } else if (number === 48) {
+    wordsContentList[2].style.display = 'none';
+  } else if (number === 68) {
+    wordsContentList[3].style.display = 'none';
+  }
+}
+
 function createBarchartOverData(data_path, geo) {
   const gridData = getGridData(geo);
   const gridWrapper = d3.select("#grid");
@@ -169,27 +234,11 @@ function createBarchartOverData(data_path, geo) {
         .style({
           width: `${barWidth + barMargin.left + barMargin.right}px`,
           height: `${barHeight + barMargin.top + barMargin.bottom}px`,
-        });
+        })
+        .attr('class', 'barchartElement');
       createBarchart(wrapper, value);
     });
   });
-  const row = gridWrapper.selectAll('.row')
-  .data(gridData)
-  .enter()
-  .append('g')
-  .attr('class', 'row');
-
-  const column = row.selectAll('.square')
-    .data(function (d) { return d; })
-    .enter().append('rect')
-    .attr('class', 'square')
-    .attr('x', function (d) { return d.x; })
-    .attr('y', function (d) { return d.y; })
-    .attr('width', function (d) { return d.width; })
-    .attr('height', function (d) { return d.height; })
-    .attr('data-province', function (d) { return d.name; })
-    .style('fill', '#fff')
-    .style('stroke', '#222');
 }
 
 // Get province name
