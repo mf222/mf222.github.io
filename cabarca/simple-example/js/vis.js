@@ -77,7 +77,7 @@ d3.json('./../words.json', (error, data) => {
     list.classList.add(topicName);
     data[topicName].words.map(function (element) {
       const listElement = document.createElement('li');
-      listElement.appendChild(document.createTextNode(element.word));
+      listElement.appendChild(document.createTextNode(`${element.word} (${(parseFloat(element.prob)*100).toLocaleString('es-CL', {maximumFractionDigits: 2})}%)`));
       list.appendChild(listElement);
     });
     words.appendChild(list);
