@@ -4,14 +4,14 @@
 
 const CENTER_LAT = -70.5993;
 const CENTER_LNG = -33.4489;
-const ZOOM = 39500;
+const ZOOM = 29500;
 
-let width = 650,
-  height = 650,
+let width = 450,
+  height = 450,
   centered;
 
-const barWidth = 120;
-const barHeight = 120;
+const barWidth = 100;
+const barHeight = 100;
 
 const barMargin = { top: 20, right: 0, bottom: 10, left: 30 };
 const barW = barWidth - barMargin.left - barMargin.right;
@@ -67,6 +67,11 @@ const bigText = g.append('text')
   .classed('big-text', true)
   .attr('x', 20)
   .attr('y', 45);
+
+const clickedText = g.append('text')
+  .classed('big-text', true)
+  .attr('x', 350)
+  .attr('y', 400);
 
 const wordsContentList = [];
 
@@ -202,25 +207,25 @@ function createBarchart(wrapper, data) {
 }
 
 function getBarWords(number) {
-  if (number === 8) {
+  if (number === 5) {
     wordsContentList[0].style.display = 'flex';
-  } else if (number === 28) {
+  } else if (number === 21) {
     wordsContentList[1].style.display = 'flex';
-  } else if (number === 48) {
+  } else if (number === 37) {
     wordsContentList[2].style.display = 'flex';
-  } else if (number === 68) {
+  } else if (number === 53) {
     wordsContentList[3].style.display = 'flex';
   }
 }
 
 function cleanBarWords(number) {
-  if (number === 8) {
+  if (number === 5) {
     wordsContentList[0].style.display = 'none';
-  } else if (number === 28) {
+  } else if (number === 21) {
     wordsContentList[1].style.display = 'none';
-  } else if (number === 48) {
+  } else if (number === 37) {
     wordsContentList[2].style.display = 'none';
-  } else if (number === 68) {
+  } else if (number === 53) {
     wordsContentList[3].style.display = 'none';
   }
 }
@@ -291,6 +296,9 @@ function clicked(d) {
         return fillFn(d);
       }
     });
+
+    const provinceName = nameFn(d);
+    clickedText.text(provinceName);
 }
 
 function mouseover(d) {
@@ -298,7 +306,7 @@ function mouseover(d) {
   const provinceName = nameFn(d);
   d3.select(this).style('fill', 'orange');
   bigText.text(provinceName);
-  barchart = d3.select('g.' + provinceName.replace(' ', '.')).selectAll('rect').style('fill', 'orange')
+  barchart = d3.select('g.' + provinceName.replace(' ', '.')).selectAll('rect').style('fill', 'orange');
 }
 
 function mouseout(d) {

@@ -20,7 +20,7 @@ text{
 }
 
 text.big-text{
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -45,6 +45,7 @@ text.big-text{
 
 .content {
   display: flex;
+  max-width: 1400px;
 }
 
 .bars {
@@ -58,7 +59,7 @@ text.big-text{
 .words-content ul{
   display: flex;
   list-style: none;
-  width: 300px;
+  width: 200px;
   flex-wrap: wrap;
 }
 

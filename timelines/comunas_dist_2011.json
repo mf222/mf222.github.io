@@ -1,0 +1,212 @@
+{
+    "Conchalí": {
+        "topic_0": 0.02,
+        "topic_1": 0.15,
+        "topic_2": 0.7,
+        "topic_3": 0.12
+    },
+    "Renca": {
+        "topic_0": 0.1,
+        "topic_1": 0.08,
+        "topic_2": 0.64,
+        "topic_3": 0.17
+    },
+    "Quilicura": {
+        "topic_0": 0.06,
+        "topic_1": 0.04,
+        "topic_2": 0.66,
+        "topic_3": 0.23
+    },
+    "Independencia": {
+        "topic_0": 0.05,
+        "topic_1": 0.1,
+        "topic_2": 0.69,
+        "topic_3": 0.14
+    },
+    "Huechuraba": {
+        "topic_0": 0.08,
+        "topic_1": 0.13,
+        "topic_2": 0.62,
+        "topic_3": 0.16
+    },
+    "Vitacura": {
+        "topic_0": 0.07,
+        "topic_1": 0.12,
+        "topic_2": 0.62,
+        "topic_3": 0.18
+    },
+    "Lo Barnechea": {
+        "topic_0": 0.04,
+        "topic_1": 0.1,
+        "topic_2": 0.65,
+        "topic_3": 0.19
+    },
+    "Pudahuel": {
+        "topic_0": 0.05,
+        "topic_1": 0.09,
+        "topic_2": 0.69,
+        "topic_3": 0.15
+    },
+    "Cerro Navia": {
+        "topic_0": 0.01,
+        "topic_1": 0.06,
+        "topic_2": 0.55,
+        "topic_3": 0.37
+    },
+    "Quinta Normal": {
+        "topic_0": 0.07,
+        "topic_1": 0.07,
+        "topic_2": 0.68,
+        "topic_3": 0.18
+    },
+    "Santiago": {
+        "topic_0": 0.06,
+        "topic_1": 0.06,
+        "topic_2": 0.68,
+        "topic_3": 0.19
+    },
+    "Recoleta": {
+        "topic_0": 0.05,
+        "topic_1": 0.11,
+        "topic_2": 0.74,
+        "topic_3": 0.1
+    },
+    "Providencia": {
+        "topic_0": 0.06,
+        "topic_1": 0.1,
+        "topic_2": 0.68,
+        "topic_3": 0.15
+    },
+    "Las Condes": {
+        "topic_0": 0.05,
+        "topic_1": 0.11,
+        "topic_2": 0.7,
+        "topic_3": 0.14
+    },
+    "Lo Prado": {
+        "topic_0": 0.04,
+        "topic_1": 0.1,
+        "topic_2": 0.58,
+        "topic_3": 0.27
+    },
+    "Estación Central": {
+        "topic_0": 0.02,
+        "topic_1": 0.08,
+        "topic_2": 0.7,
+        "topic_3": 0.19
+    },
+    "Pedro Aguirre Cerda": {
+        "topic_0": 0.01,
+        "topic_1": 0.11,
+        "topic_2": 0.56,
+        "topic_3": 0.3
+    },
+    "San Miguel": {
+        "topic_0": 0.05,
+        "topic_1": 0.1,
+        "topic_2": 0.57,
+        "topic_3": 0.28
+    },
+    "San Joaquí­n": {
+        "topic_0": 0.04,
+        "topic_1": 0.02,
+        "topic_2": 0.68,
+        "topic_3": 0.26
+    },
+    "Ñuñoa": {
+        "topic_0": 0.05,
+        "topic_1": 0.1,
+        "topic_2": 0.66,
+        "topic_3": 0.18
+    },
+    "La Reina": {
+        "topic_0": 0.05,
+        "topic_1": 0.08,
+        "topic_2": 0.65,
+        "topic_3": 0.21
+    },
+    "Maipú": {
+        "topic_0": 0.04,
+        "topic_1": 0.12,
+        "topic_2": 0.63,
+        "topic_3": 0.2
+    },
+    "Cerrillos": {
+        "topic_0": 0.02,
+        "topic_1": 0.09,
+        "topic_2": 0.75,
+        "topic_3": 0.12
+    },
+    "Lo Espejo": {
+        "topic_0": 0.04,
+        "topic_1": 0.01,
+        "topic_2": 0.93,
+        "topic_3": 0
+    },
+    "La Cisterna": {
+        "topic_0": 0.05,
+        "topic_1": 0.03,
+        "topic_2": 0.57,
+        "topic_3": 0.34
+    },
+    "La Granja": {
+        "topic_0": 0.14,
+        "topic_1": 0.02,
+        "topic_2": 0.78,
+        "topic_3": 0.05
+    },
+    "Macul": {
+        "topic_0": 0.08,
+        "topic_1": 0.1,
+        "topic_2": 0.71,
+        "topic_3": 0.1
+    },
+    "Peñalolén": {
+        "topic_0": 0.1,
+        "topic_1": 0.08,
+        "topic_2": 0.58,
+        "topic_3": 0.23
+    },
+    "Padre Hurtado": {
+        "topic_0": 0,
+        "topic_1": 0.21,
+        "topic_2": 0.76,
+        "topic_3": 0.01
+    },
+    "San Bernardo": {
+        "topic_0": 0.05,
+        "topic_1": 0.1,
+        "topic_2": 0.59,
+        "topic_3": 0.25
+    },
+    "El Bosque": {
+        "topic_0": 0.04,
+        "topic_1": 0.1,
+        "topic_2": 0.65,
+        "topic_3": 0.21
+    },
+    "San Ramón": {
+        "topic_0": 0.05,
+        "topic_1": 0.05,
+        "topic_2": 0.76,
+        "topic_3": 0.13
+    },
+    "La Pintana": {
+        "topic_0": 0,
+        "topic_1": 0.12,
+        "topic_2": 0.71,
+        "topic_3": 0.16
+    },
+    "Puente Alto": {
+        "topic_0": 0.06,
+        "topic_1": 0.1,
+        "topic_2": 0.6,
+        "topic_3": 0.23
+    },
+    "La Florida": {
+        "topic_0": 0.08,
+        "topic_1": 0.06,
+        "topic_2": 0.65,
+        "topic_3": 0.19
+    }
+}

@@ -1,0 +1,342 @@
+{
+    "topic_0": {
+        "topic": 0,
+        "words": [
+            {
+                "word": "robo",
+                "prob": "0.039"
+            },
+            {
+                "word": "total",
+                "prob": "0.033"
+            },
+            {
+                "word": "daños",
+                "prob": "0.026"
+            },
+            {
+                "word": "circunstancia",
+                "prob": "0.019"
+            },
+            {
+                "word": "señalizacion",
+                "prob": "0.019"
+            },
+            {
+                "word": "presencia",
+                "prob": "0.019"
+            },
+            {
+                "word": "4",
+                "prob": "0.018"
+            },
+            {
+                "word": "alcoholemiano",
+                "prob": "0.017"
+            },
+            {
+                "word": "carabinerosno",
+                "prob": "0.016"
+            },
+            {
+                "word": "hechos",
+                "prob": "0.011"
+            },
+            {
+                "word": "vehículo",
+                "prob": "0.010"
+            },
+            {
+                "word": "chapa",
+                "prob": "0.009"
+            },
+            {
+                "word": "externo",
+                "prob": "0.008"
+            },
+            {
+                "word": "puerta",
+                "prob": "0.008"
+            },
+            {
+                "word": "daños",
+                "prob": "0.007"
+            },
+            {
+                "word": "web",
+                "prob": "0.006"
+            },
+            {
+                "word": "call",
+                "prob": "0.006"
+            },
+            {
+                "word": "denunciado",
+                "prob": "0.006"
+            },
+            {
+                "word": "delantero",
+                "prob": "0.006"
+            },
+            {
+                "word": "trasero",
+                "prob": "0.006"
+            }
+        ]
+    },
+    "topic_1": {
+        "topic": 1,
+        "words": [
+            {
+                "word": "auto",
+                "prob": "0.054"
+            },
+            {
+                "word": "vehículo",
+                "prob": "0.041"
+            },
+            {
+                "word": "si",
+                "prob": "0.019"
+            },
+            {
+                "word": "algún",
+                "prob": "0.015"
+            },
+            {
+                "word": "llaves",
+                "prob": "0.013"
+            },
+            {
+                "word": "camioneta",
+                "prob": "0.013"
+            },
+            {
+                "word": "estacionamiento",
+                "prob": "0.012"
+            },
+            {
+                "word": "robado",
+                "prob": "0.011"
+            },
+            {
+                "word": "cuenta",
+                "prob": "0.011"
+            },
+            {
+                "word": "todas",
+                "prob": "0.009"
+            },
+            {
+                "word": "seguridad",
+                "prob": "0.008"
+            },
+            {
+                "word": "comprobante",
+                "prob": "0.008"
+            },
+            {
+                "word": "carabineros",
+                "prob": "0.007"
+            },
+            {
+                "word": "mecanismo",
+                "prob": "0.007"
+            },
+            {
+                "word": "camion",
+                "prob": "0.006"
+            },
+            {
+                "word": "asegurado",
+                "prob": "0.006"
+            },
+            {
+                "word": "día",
+                "prob": "0.006"
+            },
+            {
+                "word": "empresa",
+                "prob": "0.006"
+            },
+            {
+                "word": "denuncia",
+                "prob": "0.005"
+            },
+            {
+                "word": "patente",
+                "prob": "0.004"
+            }
+        ]
+    },
+    "topic_2": {
+        "topic": 2,
+        "words": [
+            {
+                "word": "vehículo",
+                "prob": "0.099"
+            },
+            {
+                "word": "estacionado",
+                "prob": "0.050"
+            },
+            {
+                "word": "deje",
+                "prob": "0.022"
+            },
+            {
+                "word": "robado",
+                "prob": "0.016"
+            },
+            {
+                "word": "robo",
+                "prob": "0.013"
+            },
+            {
+                "word": "lugar",
+                "prob": "0.013"
+            },
+            {
+                "word": "automovil",
+                "prob": "0.012"
+            },
+            {
+                "word": "auto",
+                "prob": "0.011"
+            },
+            {
+                "word": "encontraba",
+                "prob": "0.011"
+            },
+            {
+                "word": "calle",
+                "prob": "0.011"
+            },
+            {
+                "word": "hrs",
+                "prob": "0.010"
+            },
+            {
+                "word": "domicilio",
+                "prob": "0.010"
+            },
+            {
+                "word": "volver",
+                "prob": "0.010"
+            },
+            {
+                "word": "carabineros",
+                "prob": "0.009"
+            },
+            {
+                "word": "día",
+                "prob": "0.009"
+            },
+            {
+                "word": "percato",
+                "prob": "0.008"
+            },
+            {
+                "word": "casa",
+                "prob": "0.008"
+            },
+            {
+                "word": "habia",
+                "prob": "0.008"
+            },
+            {
+                "word": "salir",
+                "prob": "0.008"
+            },
+            {
+                "word": "dejo",
+                "prob": "0.008"
+            }
+        ]
+    },
+    "topic_3": {
+        "topic": 3,
+        "words": [
+            {
+                "word": "vehículo",
+                "prob": "0.066"
+            },
+            {
+                "word": "auto",
+                "prob": "0.020"
+            },
+            {
+                "word": "dos",
+                "prob": "0.010"
+            },
+            {
+                "word": "personas",
+                "prob": "0.010"
+            },
+            {
+                "word": "llaves",
+                "prob": "0.009"
+            },
+            {
+                "word": "casa",
+                "prob": "0.008"
+            },
+            {
+                "word": "roban",
+                "prob": "0.008"
+            },
+            {
+                "word": "llevaron",
+                "prob": "0.008"
+            },
+            {
+                "word": "calle",
+                "prob": "0.007"
+            },
+            {
+                "word": "tipos",
+                "prob": "0.007"
+            },
+            {
+                "word": "arma",
+                "prob": "0.007"
+            },
+            {
+                "word": "iba",
+                "prob": "0.007"
+            },
+            {
+                "word": "domicilio",
+                "prob": "0.007"
+            },
+            {
+                "word": "pistola",
+                "prob": "0.006"
+            },
+            {
+                "word": "fuego",
+                "prob": "0.006"
+            },
+            {
+                "word": "individuos",
+                "prob": "0.006"
+            },
+            {
+                "word": "robo",
+                "prob": "0.006"
+            },
+            {
+                "word": "camioneta",
+                "prob": "0.006"
+            },
+            {
+                "word": "bajan",
+                "prob": "0.006"
+            },
+            {
+                "word": "3",
+                "prob": "0.005"
+            }
+        ]
+    }
+}
