@@ -1,0 +1,23 @@
+{
+  "name": "mf222.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mf222/mf222.github.io.git"
+  },
+  "author": "mf222",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mf222/mf222.github.io/issues"
+  },
+  "homepage": "https://github.com/mf222/mf222.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-plugin-vue": "^8.2.0"
+  }
+}
